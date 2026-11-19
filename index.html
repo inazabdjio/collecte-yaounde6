@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1b5e20" />
+  <meta name="description" content="PWA de gestion de la collecte des ordures (Web mobile & Android)" />
+  <title>Collecte Yaoundé 6</title>
+
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/icons/icon-192x192.png" />
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192x192.png" />
+
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/views.css" />
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <header id="app-header" class="app-header"></header>
+    <main id="app-main" class="app-main" role="main">
+      <div class="loading-state">Initialisation de l'application...</div>
+    </main>
+    <nav id="app-navbar" class="app-navbar" aria-label="Navigation principale"></nav>
+  </div>
+
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+  <div id="modal-root" class="modal-root"></div>
+
+  <script type="module" src="./js/core/app.js"></script>
+</body>
+</html>
